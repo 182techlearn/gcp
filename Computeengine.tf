@@ -21,8 +21,8 @@ resource "google_compute_instance" "debian_machine" {
     startup-script = "echo Hello, world! > /var/log/startup-script.log"
   }
   labels = {
-    Name        = "Terraform_Learning"
-    Environment = "training"
+    Name        = "terraform_learning"
+    env  = "training"
   }
 
 }
