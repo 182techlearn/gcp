@@ -1,6 +1,6 @@
 
 resource "google_compute_instance" "debian_machine" {
-  name         = "debian1"
+  name         = "debian2"
   machine_type = "e2-micro" # Free-tier eligible
   zone         = "us-central1-c"
 
