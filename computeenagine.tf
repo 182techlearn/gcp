@@ -55,3 +55,10 @@ resource "google_compute_firewall" "allow_ports" {
 
   source_ranges = ["0.0.0.0/0"]
 }
+
+# 💾 Save Private Key Locally
+resource "local_file" "private_key" {
+  content  = tls_private_key.ssh_key1.private_key_pem
+  filename = "${path.module}/ubuntu_gui_key.pem"
+}
+
